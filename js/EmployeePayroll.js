@@ -15,8 +15,6 @@ class EmployeePayroll {
         else {
             throw "InCorrect name";
         }
-
-        this._name = name;
     }
 
     get profilePic() { return this._profilePic; }
@@ -53,6 +51,7 @@ class EmployeePayroll {
           throw 'Start Date is beyond 30 Days!';
         this._startDate = startDate; 
     }
+    
     // toString() method
     toString() {
         const options={year:'numeric',month:'numeric',day:'numeric'};
